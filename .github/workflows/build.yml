@@ -33,9 +33,9 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-        
+
       - name: West Build (Microdox Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=microdox_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=microdox_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/microdox"
       - name: Microdox DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
@@ -46,11 +46,11 @@ jobs:
       - name: Archive (Microdox Left)
         uses: actions/upload-artifact@v2
         with:
-          name: firmware
+          name: microdox
           path: microdox_left_nice_nano.uf2
+          
       - name: West Build (Microdox Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=microdox_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=microdox_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/microdox"
       - name: Microdox Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
@@ -58,5 +58,21 @@ jobs:
       - name: Archive (Microdox Right)
         uses: actions/upload-artifact@v2
         with:
-          name: firmware
+          name: microdox
           path: microdox_right_nice_nano.uf2
+
+      - name: West Build (BLe Chiffre)
+        run: west build -s zmk/app -b ble_chiffre -d ble_chiffre -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/ble_chiffre"
+      - name: BLe Chiffre DTS File
+        if: ${{ always() }}
+        run: cat -n ble_chiffre/zephyr/ble_chiffre.dts.pre.tmp
+      - name: Rename zmk.uf2
+        run: cp ble_chiffre/zephyr/zmk.uf2 ble_chiffre.uf2
+      - name: Archive (BLe_Chiffre)
+        uses: actions/upload-artifact@v2
+        with:
+          name: ble_chiffre
+          path: ble_chiffre.uf2
+      
+
+        
