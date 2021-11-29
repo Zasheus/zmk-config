@@ -33,6 +33,7 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
+        
       - name: West Build (Microdox Left)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=microdox_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Microdox DTS File
