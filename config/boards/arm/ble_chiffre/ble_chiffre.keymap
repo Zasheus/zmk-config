@@ -157,23 +157,5 @@
 	U_NA U_NA &kp BSPC &kp RET
             >;
         };
-
-	symb {
-            bindings = <
-    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCT &kp CRRT &kp LBRC &kp RBRC &kp GRAVE
-	&kp SLASH &kp ASTRK &kp UNDER &kp MINUS U_NA &kp AMPS &kp LPAR &kp RPAR &kp COLON &kp SEMICOLON
-	&kp FSLH U_NA &kp EQUAL &kp PLUS U_NA &kp PIPE &kp LBKT &kp RBKT U_NA &kp TILDE
-	U_NA U_NA &kp BSPC &kp RET
-            >;
-        };
-
-	func {
-            bindings = <
-    &kp ESC U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA
-	&bt BT_SEL 0 &bt BT_SEL 1 U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA
-	U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA U_NA
-	U_NA &kp DEL &bt BT_CLR U_NA
-            >;
-        };
     };
 };
