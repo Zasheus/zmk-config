@@ -161,9 +161,9 @@
 	symb {
             bindings = <
     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCT &kp CRRT &kp LBRC &kp RBRC &kp GRAVE
-	&kp SLASH &kp ASTRK &kp UNDER &kp MINUS U_NA &kp AMPS &kp LPAR &kp RPAR &kp COLON &kp SEMICOLON
-	&kp FSLH U_NA &kp EQUAL &kp PLUS U_NA &kp PIPE &kp LBKT &kp RBKT U_NA &kp TILDE
-	U_NA U_NA &kp BSPC &kp RET
+	&kp SLASH &kp ASTRK &kp UNDER &kp MINUS &none &kp AMPS &kp LPAR &kp RPAR &kp COLON &kp SEMICOLON
+	&kp FSLH &none &kp EQUAL &kp PLUS &none &kp PIPE &kp LBKT &kp RBKT &none &kp TILDE
+	&none &none &kp BSPC &kp RET
             >;
         };
     };
