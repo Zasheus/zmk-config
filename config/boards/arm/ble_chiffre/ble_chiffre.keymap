@@ -151,8 +151,8 @@
 
     nav {
             bindings = <
-    &none &none &none &none &none &none &none &kp UP &none &none
-	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none &none &kp LEFT &kp DOWN &kp RIGHT &none
+    &none &none &none &none &none &none &kp K_COPY &kp UP &kp K_PASTE &none
+	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none &none &kp LEFT &kp DOWN &kp RIGHT &kp K_CUT
 	&none &none &none &none &none &none &none &none &none &none
 	&none &none &kp BSPC &kp RET
             >;
@@ -160,9 +160,9 @@
 
 	symb {
             bindings = <
-    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCT &kp CRRT &kp LBRC &kp RBRC &kp GRAVE
+    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCT &kp CRRT &kp LBRC &kp RBRC &kp GRAVE &kp TILDE
 	&kp SLASH &kp ASTRK &kp UNDER &kp MINUS &none &kp AMPS &kp LPAR &kp RPAR &kp COLON &kp SEMICOLON
-	&kp FSLH &none &kp EQUAL &kp PLUS &none &kp PIPE &kp LBKT &kp RBKT &none &kp TILDE
+	&kp FSLH &none &kp EQUAL &kp PLUS &none &kp PIPE &kp LBKT &kp RBKT &none &kp &none 
 	&none &none &kp BSPC &kp RET
             >;
         };
