@@ -40,7 +40,7 @@
 			compatible = "zmk,behavior-hold-tap";
 			label = "homerow mods";
 			#binding-cells = <2>;
-			tapping_term_ms = <230>;
+			tapping_term_ms = <170>;
             flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
         };
@@ -131,10 +131,10 @@
 
     default_layer {
             bindings = <
-    &kp Q &kp W &kp F &kp P &kp G &kp J &kp L &kp U &kp Y &kp SQT
-    &hm2 LGUI A &hm LALT R &hm LCTRL S &hm1 LSHFT T &hm2 CLCK D &kp H &hm1 RSHFT N &hm RCTRL E &hm RALT I &hm2 LGUI O
-    &kp Z &kp X &kp C &kp V &kp B &kp K &kp M &com_col SEMI COMMA &kp DOT &kp FSLH
-    &kp TAB &bh 2 RET &bh 1 SPACE &bh 2 RET
+    &kp Q       &kp W        &kp E       &kp R       &kp T       &kp Y       &kp U      &kp I        &kp O        &kp P
+	&hm LGUI A   &hm LALT S   &hm LCTRL D  &hm LSHFT F  &kp G        &kp H        &hm LSHFT J  &hm LCTRL K  &hm RALT L   &hm LGUI SQT
+	&kp Z        &hm RALT X   &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT &kp SLASH
+	&lt MOUR TAB, &lt NAVR SPC, &lt NSL BSPC, &lt NSSL RET
             >;
         };
 
