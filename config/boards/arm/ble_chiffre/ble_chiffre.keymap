@@ -162,7 +162,7 @@
             bindings = <
     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCT &kp CRRT &kp LBRC &kp RBRC &kp GRAVE &kp TILDE
 	&kp SLASH &kp ASTRK &kp UNDER &kp MINUS &none &kp AMPS &kp LPAR &kp RPAR &kp COLON &kp SEMICOLON
-	&kp FSLH &none &kp EQUAL &kp PLUS &none &kp PIPE &kp LBKT &kp RBKT &none &kp &none 
+	&kp BSLH &none &kp EQUAL &kp PLUS &none &kp PIPE &kp LBKT &kp RBKT &none &none 
 	&none &none &kp BSPC &kp RET
             >;
         };
