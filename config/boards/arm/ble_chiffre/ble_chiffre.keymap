@@ -134,7 +134,7 @@
     &kp Q       &kp W        &kp E       &kp R       &kp T       &kp Y       &kp U      &kp I        &kp O        &kp P
 	&hm LGUI A   &hm LALT S   &hm LCTRL D  &hm LSHFT F  &kp G        &kp H        &hm LSHFT J  &hm LCTRL K  &hm RALT L   &hm LGUI SQT
 	&kp Z        &hm RALT X   &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT &kp SLASH
-	&lt MOUR TAB, &lt NAVR SPC, &lt NSL BSPC, &lt NSSL RET
+	&lt 1 TAB, &lt 2 SPC, &lt 1 BSPC, &lt 1 RET
             >;
         };
 
